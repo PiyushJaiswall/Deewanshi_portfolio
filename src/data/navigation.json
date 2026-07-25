@@ -1,0 +1,8 @@
+[
+  { "label": "Home", "href": "/", "order": 1 },
+  { "label": "About", "href": "/about", "order": 2 },
+  { "label": "Work", "href": "/work", "order": 3 },
+  { "label": "Copywriting", "href": "/copywriting", "order": 4 },
+  { "label": "Gallery", "href": "/gallery", "order": 5 },
+  { "label": "Contact", "href": "/contact", "order": 6 }
+]
