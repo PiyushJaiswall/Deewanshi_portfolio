@@ -9,8 +9,9 @@ export function CopywritingCard({ sample }: CopywritingCardProps) {
   return (
     <div className="rounded-lg border border-border p-6">
       <Badge variant="outline">{sample.brand}</Badge>
-      <p className="mt-4 text-lg font-medium leading-relaxed">
-        "{sample.copy}"
+<p className="mt-4 text-lg font-medium leading-relaxed">
+  &ldquo;{sample.copy}&rdquo;
+</p>
       </p>
       <div className="mt-5 border-t border-border pt-4">
         <p className="text-xs font-medium uppercase tracking-wide text-primary">
