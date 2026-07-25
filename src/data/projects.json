@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "ayatana-resorts",
+    "brand": "Ayatana Resorts",
+    "title": "Ayatana Resorts Content Strategy",
+    "role": "Content Strategist",
+    "coverImage": "/content/ayatana-resorts/cover.jpg",
+    "thumbnail": "/content/ayatana-resorts/thumbnail.jpg",
+    "summary": "Curated content strategy and influencer marketing for a luxury nature-centric resort brand.",
+    "totalViews": "2.2M",
+    "order": 1,
+    "featured": true
+  },
+  {
+    "slug": "wow-skin-science",
+    "brand": "WOW Skin Science",
+    "title": "WOW Skin Science Campaign",
+    "role": "Social Media Marketing",
+    "coverImage": "/content/wow-skin-science/cover.jpg",
+    "thumbnail": "/content/wow-skin-science/thumbnail.jpg",
+    "summary": "Product content and influencer event activation for a skincare brand.",
+    "totalViews": "500K",
+    "order": 2,
+    "featured": true
+  },
+  {
+    "slug": "ola-cabs",
+    "brand": "Ola Cabs",
+    "title": "Ola Cabs Brand Storytelling",
+    "role": "Content Strategist",
+    "coverImage": "/content/ola-cabs/cover.jpg",
+    "thumbnail": "/content/ola-cabs/thumbnail.jpg",
+    "summary": "Reel-based storytelling campaign celebrating 15 years of Ola.",
+    "totalViews": "23.1M",
+    "order": 3,
+    "featured": true
+  },
+  {
+    "slug": "plan-b",
+    "brand": "Plan B",
+    "title": "Plan B Wing Festival Campaign",
+    "role": "Content Strategist",
+    "coverImage": "/content/plan-b/cover.jpg",
+    "thumbnail": "/content/plan-b/thumbnail.jpg",
+    "summary": "Theme-based campaign content for Plan B's Wing Festival launch.",
+    "totalViews": "N/A",
+    "order": 4,
+    "featured": false
+  }
+]
