@@ -1,0 +1,26 @@
+[
+  {
+    "brand": "ayatana-resorts",
+    "image": "/content/ayatana-resorts/gallery/01.jpg",
+    "alt": "Ayatana Resorts infinity pool",
+    "order": 1
+  },
+  {
+    "brand": "ayatana-resorts",
+    "image": "/content/ayatana-resorts/gallery/02.jpg",
+    "alt": "Ayatana Resorts monsoon waterfall",
+    "order": 2
+  },
+  {
+    "brand": "wow-skin-science",
+    "image": "/content/wow-skin-science/gallery/01.jpg",
+    "alt": "WOW Skin Science product shot",
+    "order": 1
+  },
+  {
+    "brand": "ola-cabs",
+    "image": "/content/ola-cabs/gallery/01.jpg",
+    "alt": "Ola Cabs reel thumbnail",
+    "order": 1
+  }
+]
