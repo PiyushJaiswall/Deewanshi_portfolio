@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "ayatana-resorts",
+    "name": "Ayatana Resorts",
+    "logo": "/content/ayatana-resorts/logo.png",
+    "category": "Hospitality",
+    "instagramHandle": "azora.by.ayatana",
+    "verified": true
+  },
+  {
+    "slug": "wow-skin-science",
+    "name": "WOW Skin Science",
+    "logo": "/content/wow-skin-science/logo.png",
+    "category": "Beauty",
+    "instagramHandle": "wowskinscienceindia",
+    "verified": true
+  },
+  {
+    "slug": "ola-cabs",
+    "name": "Ola Cabs",
+    "logo": "/content/ola-cabs/logo.png",
+    "category": "Mobility",
+    "instagramHandle": "olacabs",
+    "verified": true
+  },
+  {
+    "slug": "leela-coorg",
+    "name": "The Leela Coorg",
+    "logo": "/content/leela-coorg/logo.png",
+    "category": "Hospitality",
+    "instagramHandle": "theleelacoorgforestsanctuary",
+    "verified": false
+  },
+  {
+    "slug": "kahani-paradise",
+    "name": "Kahani Paradise",
+    "logo": "/content/kahani-paradise/logo.png",
+    "category": "Hospitality",
+    "instagramHandle": "kahani_paradise",
+    "verified": false
+  },
+  {
+    "slug": "plan-b",
+    "name": "Plan B",
+    "logo": "/content/plan-b/logo.png",
+    "category": "Food & Beverage",
+    "instagramHandle": "planb",
+    "verified": false
+  }
+]
