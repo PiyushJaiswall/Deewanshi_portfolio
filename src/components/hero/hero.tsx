@@ -149,6 +149,9 @@ export function Hero() {
               </div>
 
             </div>
+
+            <div className="mt-16">
+
               <p className="mb-6 text-xs font-semibold uppercase tracking-[0.45em] text-muted-foreground">
                 Trusted By
               </p>
@@ -213,4 +216,3 @@ export function Hero() {
   );
 }
 
-            <div className="mt-16">
