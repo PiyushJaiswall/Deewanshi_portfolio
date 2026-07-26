@@ -1,138 +1,216 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
+import { HeroCollage } from "@/components/hero/hero-collage";
 import { Container } from "@/components/sections/container";
 import { Button } from "@/components/ui/button";
-import { HeroCollage } from "@/components/hero/hero-collage";
-import { BrandPills } from "@/components/brands/brand-pills";
-import { ANIMATION } from "@/lib/constants";
 
 const brands = [
-  "Ayatana",
-  "Azora",
-  "Leela",
-  "Kahani",
-  "WOW",
-  "OLA",
+  {
+    src: "/assets/brands/Ayatna_logo.svg",
+    alt: "Ayatana Resorts",
+    width: 135,
+  },
+  {
+    src: "/assets/brands/azora logo.svg",
+    alt: "Azora",
+    width: 110,
+  },
+  {
+    src: "/assets/brands/kahani logo.svg",
+    alt: "Kahani Paradise",
+    width: 130,
+  },
+  {
+    src: "/assets/brands/ola logo.svg",
+    alt: "OLA",
+    width: 80,
+  },
+  {
+    src: "/assets/brands/wow logo.svg",
+    alt: "WOW Skin Science",
+    width: 120,
+  },
 ];
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background">
-      {/* Background Glow */}
-      <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
+    <section className="relative overflow-hidden py-24 lg:py-32">
 
-      <Container className="relative">
-        <div className="grid min-h-screen items-center gap-16 py-24 lg:grid-cols-2">
-          {/* Left Content */}
-          <div className="relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: ANIMATION.durationFast,
-                ease: ANIMATION.easeDefault,
-              }}
-              className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-5 py-2 text-sm font-medium text-primary"
-            >
-              Creative Marketing Strategist
-            </motion.div>
+      <Container>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.15,
-                duration: ANIMATION.durationSlow,
-                ease: ANIMATION.easeDefault,
-              }}
-              className="mt-8 text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl xl:text-7xl"
-            >
-              Building Brands
-              <br />
-              <span className="text-primary">
-                People Can&apos;t
+        <div className="grid items-center gap-20 lg:grid-cols-[1.05fr_.95fr]">
+
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 40,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: .8,
+            }}
+          >
+
+            <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-4 py-2">
+
+              <span className="mr-2 h-2 w-2 rounded-full bg-primary" />
+
+              <span className="text-sm font-medium">
+                Marketing Strategist • Brand Storyteller
               </span>
-              <br />
-              Stop Scrolling.
-            </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: ANIMATION.durationSlow,
-                ease: ANIMATION.easeDefault,
-              }}
-              className="mt-8 max-w-xl text-lg leading-8 text-muted"
-            >
-              Helping luxury hospitality, lifestyle and consumer brands grow
-              through strategy, storytelling, social media, influencer
-              campaigns and high-performing digital marketing.
-            </motion.p>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.45,
-                duration: ANIMATION.durationBase,
-              }}
-              className="mt-10 flex flex-wrap gap-4"
-            >
+            <h1 className="mt-8 text-5xl font-black leading-[1.05] tracking-tight lg:text-7xl">
+
+              Building
+
+              <span className="block text-primary">
+                Brands People
+              </span>
+
+              <span className="block">
+                Can't Ignore.
+              </span>
+
+            </h1>
+
+            <p className="mt-8 max-w-xl text-lg leading-8 text-muted-foreground">
+
+              I help hospitality, luxury lifestyle and consumer brands
+              transform creative ideas into campaigns that increase
+              visibility, engagement and measurable business growth.
+
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+
               <Button size="lg" asChild>
-                <Link href="/work">View Work</Link>
+                <Link href="/work">
+                  View Selected Work
+                </Link>
               </Button>
 
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/portfolio.pdf">Download Portfolio</Link>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+              >
+                <Link href="/contact">
+                  Let's Work Together
+                </Link>
               </Button>
-            </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.65 }}
-              className="mt-12 flex flex-wrap gap-10"
-            >
+            </div>
+
+            <div className="mt-14 flex flex-wrap gap-10">
+
               <div>
-                <h2 className="text-3xl font-bold">20+</h2>
-                <p className="text-sm text-muted">Campaigns</p>
+
+                <h2 className="text-5xl font-bold">
+                  20+
+                </h2>
+
+                <p className="mt-2 text-muted-foreground">
+                  Campaigns
+                </p>
+
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold">6+</h2>
-                <p className="text-sm text-muted">Brands</p>
+
+                <h2 className="text-5xl font-bold">
+                  6+
+                </h2>
+
+                <p className="mt-2 text-muted-foreground">
+                  Premium Brands
+                </p>
+
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold">100M+</h2>
-                <p className="text-sm text-muted">Impressions*</p>
-              </div>
-            </motion.div>
 
-            <BrandPills brands={brands} />
-          </div>
+                <h2 className="text-5xl font-bold">
+                  100M+
+                </h2>
+
+                <p className="mt-2 text-muted-foreground">
+                  Impressions
+                </p>
+
+              </div>
+
+            </div>
+              <p className="mb-6 text-xs font-semibold uppercase tracking-[0.45em] text-muted-foreground">
+                Trusted By
+              </p>
+
+              <div className="flex flex-wrap items-center gap-x-10 gap-y-8">
+
+                {brands.map((brand) => (
+                  <motion.div
+                    key={brand.alt}
+                    whileHover={{
+                      scale: 1.08,
+                      y: -2,
+                    }}
+                    transition={{
+                      duration: 0.25,
+                    }}
+                    className="opacity-70 transition-all duration-300 hover:opacity-100"
+                  >
+                    <Image
+                      src={brand.src}
+                      alt={brand.alt}
+                      width={brand.width}
+                      height={32}
+                      className="
+                        h-8
+                        w-auto
+                        object-contain
+                        grayscale
+                        transition-all
+                        duration-300
+                        hover:grayscale-0
+                      "
+                    />
+                  </motion.div>
+                ))}
+
+              </div>
+
+            </div>
+
+          </motion.div>
 
           {/* Right Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 80 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.8,
-              ease: ANIMATION.easeDefault,
-            }}
-            className="relative hidden items-center justify-center lg:flex"
-          >
-            <HeroCollage />
-          </motion.div>
+
+          <HeroCollage />
+
         </div>
+
       </Container>
+
+      {/* Background Decoration */}
+
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+
+        <div className="absolute left-0 top-0 h-[450px] w-[450px] rounded-full bg-primary/5 blur-[140px]" />
+
+        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[140px]" />
+
+      </div>
+
     </section>
   );
 }
+
+            <div className="mt-16">
