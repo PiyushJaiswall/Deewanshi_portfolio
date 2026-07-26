@@ -77,7 +77,7 @@ export function Hero() {
               </span>
 
               <span className="block">
-                Can't Ignore.
+                Can&#39;t Ignore.
               </span>
 
             </h1>
@@ -104,7 +104,7 @@ export function Hero() {
                 asChild
               >
                 <Link href="/contact">
-                  Let's Work Together
+                  Let&#39;s Work Together
                 </Link>
               </Button>
 
