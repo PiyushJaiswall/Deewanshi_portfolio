@@ -13,7 +13,7 @@ const cards = [
   {
     src: "/assets/hero/leela_coorg.webp",
     alt: "The Leela Coorg",
-    logo: "/assets/brands/Leela_logo.svg',
+    logo: "/assets/brands/Leela_logo.svg",
     className: "top-0 right-0 h-[185px] w-[210px]",
   },
   {
