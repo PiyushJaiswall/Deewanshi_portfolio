@@ -22,26 +22,16 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-background">
       {/* Background Glow */}
-      <div className="absolute left-[-120px] top-[-120px] h-[350px] w-[350px] rounded-full bg-primary/10 blur-[120px]" />
-
-      <div className="absolute right-[-120px] bottom-[-120px] h-[350px] w-[350px] rounded-full bg-primary/10 blur-[120px]" />
+      <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
+      <div className="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
 
       <Container className="relative">
-        <div className="grid min-h-screen items-center gap-20 py-24 lg:grid-cols-2">
-          {/* LEFT CONTENT */}
-
+        <div className="grid min-h-screen items-center gap-16 py-24 lg:grid-cols-2">
+          {/* Left Content */}
           <div className="relative z-10">
-            {/* Badge */}
-
             <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: ANIMATION.durationFast,
                 ease: ANIMATION.easeDefault,
@@ -51,17 +41,9 @@ export function Hero() {
               Creative Marketing Strategist
             </motion.div>
 
-            {/* Heading */}
-
             <motion.h1
-              initial={{
-                opacity: 0,
-                y: 30,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.15,
                 duration: ANIMATION.durationSlow,
@@ -71,27 +53,16 @@ export function Hero() {
             >
               Building Brands
               <br />
-
               <span className="text-primary">
-                People Can't
+                People Can&apos;t
               </span>
-
               <br />
-
               Stop Scrolling.
             </motion.h1>
 
-            {/* Description */}
-
             <motion.p
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.3,
                 duration: ANIMATION.durationSlow,
@@ -99,22 +70,14 @@ export function Hero() {
               }}
               className="mt-8 max-w-xl text-lg leading-8 text-muted"
             >
-              Helping luxury hospitality, lifestyle and consumer brands
-              grow through strategy, storytelling, social media,
-              influencer campaigns and high-performing digital marketing.
+              Helping luxury hospitality, lifestyle and consumer brands grow
+              through strategy, storytelling, social media, influencer
+              campaigns and high-performing digital marketing.
             </motion.p>
 
-            {/* CTA */}
-
             <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.45,
                 duration: ANIMATION.durationBase,
@@ -122,90 +85,49 @@ export function Hero() {
               className="mt-10 flex flex-wrap gap-4"
             >
               <Button size="lg" asChild>
-                <Link href="/work">
-                  View Work
-                </Link>
+                <Link href="/work">View Work</Link>
               </Button>
 
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-              >
-                <Link href="/portfolio.pdf">
-                  Download Portfolio
-                </Link>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/portfolio.pdf">Download Portfolio</Link>
               </Button>
             </motion.div>
-
-            {/* Stats */}
 
             <motion.div
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                delay: 0.65,
-              }}
-              className="mt-12 flex gap-10"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.65 }}
+              className="mt-12 flex flex-wrap gap-10"
             >
               <div>
-                <h2 className="text-3xl font-bold">
-                  20+
-                </h2>
-
-                <p className="text-sm text-muted">
-                  Campaigns
-                </p>
+                <h2 className="text-3xl font-bold">20+</h2>
+                <p className="text-sm text-muted">Campaigns</p>
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold">
-                  6+
-                </h2>
-
-                <p className="text-sm text-muted">
-                  Brands
-                </p>
+                <h2 className="text-3xl font-bold">6+</h2>
+                <p className="text-sm text-muted">Brands</p>
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold">
-                  100M+
-                </h2>
-
-                <p className="text-sm text-muted">
-                  Impressions*
-                </p>
+                <h2 className="text-3xl font-bold">100M+</h2>
+                <p className="text-sm text-muted">Impressions*</p>
               </div>
             </motion.div>
-
-            {/* Trusted Brands */}
 
             <BrandPills brands={brands} />
           </div>
 
-          {/* RIGHT */}
-
+          {/* Right Side */}
           <motion.div
-            initial={{
-              opacity: 0,
-              x: 80,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-            }}
+            initial={{ opacity: 0, x: 80 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{
-              duration: 0.9,
-              delay: 0.25,
+              delay: 0.3,
+              duration: 0.8,
+              ease: ANIMATION.easeDefault,
             }}
-            className="relative hidden justify-center lg:flex"
+            className="relative hidden items-center justify-center lg:flex"
           >
             <HeroCollage />
           </motion.div>
